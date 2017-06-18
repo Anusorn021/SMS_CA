@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAll"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lenear1"
+        android:background="@color/colorAll"
+        android:divider="#00000000"
+        android:transcriptMode="alwaysScroll"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/lenear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAll"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/optio_btn_on_chatlist"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_verified_user_grey_500_24dp" />
+
+        <EditText
+            android:id="@+id/input_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="8dp"
+            android:layout_toEndOf="@id/optio_btn_on_chatlist"
+            android:layout_toLeftOf="@+id/enter_chat1"
+            android:layout_toRightOf="@+id/optio_btn_on_chatlist"
+            android:layout_toStartOf="@+id/enter_chat1"
+            android:hint="@string/type_your_message"
+            android:inputType="textCapSentences" />
+
+        <ImageView
+            android:id="@+id/enter_chat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/optio_btn_on_chatlist"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/ic_chat_send" />
+
+
+
+
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

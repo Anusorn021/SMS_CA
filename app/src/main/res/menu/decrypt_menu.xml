@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/decrypt_icon"
+        android:title="Decrypt"
+        android:icon="@drawable/ic_visibility_off_white_24dp"
+        android:orderInCategory="100"
+        app:showAsAction="always|withText"/>
+    <item
+        android:id="@+id/Decrypt_titel"
+        android:title="Decrypt"
+        app:showAsAction="always|withText"/>
+
+
+
+</menu>

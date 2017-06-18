@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/checkAll"
+        android:title="CheckAll"
+        android:icon="@drawable/ic_done_all_white_18dp"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/cancel"
+        android:title="Cancel"
+        android:icon="@drawable/ic_cancel_white_18dp"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/export_text"
+        android:icon="@drawable/ic_menu_share"
+        android:title="Export with text"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/export_file"
+        android:icon="@drawable/ic_menu_share"
+        android:title="Export with file"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/delete"
+        android:title="Delete"
+        app:showAsAction="never"/>
+
+
+</menu>
